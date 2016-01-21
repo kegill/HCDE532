@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mike Sinkula's First Web Page!</title>
+<style type="text/css" media="all">
+
+/* 
+Purple: http://slayeroffice.com/tools/color_palette/?hex=39275B
+Gold (Original) : http://slayeroffice.com/tools/color_palette/?hex=C79900
+Gold (Bright): http://slayeroffice.com/tools/color_palette/?hex=EBB700
+*/
+
+* { margin: 0; padding: 0; }
+
+html {
+	background: #2b1d44; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2b1d44 0%, #39275b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2b1d44), color-stop(100%,#39275b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2b1d44 0%,#39275b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2b1d44 0%,#39275b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2b1d44 0%,#39275b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2b1d44 0%,#39275b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b1d44', endColorstr='#39275b',GradientType=0 ); /* IE6-9 */
+	}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-image: url(images/bg-boxes.png);
+	background-position: top ; /* positioned to the top of page */
+	background-repeat: repeat-x; /* repeat horizontally */
+	}
+	
+h1 {
+	font-size: 36px;
+	line-height: 36px;
+	color: #FFF;
+	}
+	
+h2 {
+	font-size: 24px;
+	line-height: 24px;
+	color: #39275B; /* purple */
+	/*padding-top: 8px;*/ 
+	margin-bottom: 10px; /* changed */
+	}
+	
+h3 {
+	font-size: 18px;
+	line-height: 18px;
+	color: #39275B; /* purple */
+	padding-top: 10px; /* changed */
+	margin-bottom: 4px; /* changed */
+	}
+	
+p {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	}
+	
+ol, ul {
+	font-size: 16px;
+	line-height: 24px;
+	padding-left: 40px;
+	margin-bottom: 10px;
+	}
+	
+#header {
+	width: 980px; /* change the width */
+	margin: 0 auto;
+	padding-top: 20px; /* change the padding */
+	/*border: 1px solid black;*/
+	}
+	
+	#header a {
+		color: #FFFFFF; /* white */
+		text-decoration: none; /* remove undeline */
+	}
+	
+	#header a:hover {
+		color: #C79900; /* gold */
+	}	
+	
+
+#navigation {
+	width: 980px; /* change the width */
+	margin: 0 auto;
+	padding: 10px 0; /* lets change this to 10px top/bottom and 0px left/right */
+	/*border: 1px solid black;*/
+	color: #FFF; /* give all text elements a color of white */
+	}
+	
+	#navigation ul {
+		overflow: hidden; /* prevents the great collapse */
+		/*border: 1px solid grey;*/
+		padding: 10px 0;
+		margin: 0; /* overwrites existing margins */
+	}
+	
+	#navigation ul li {
+		list-style: none;
+		float: left;
+		margin: 0; /* overwrites existing margins */
+		margin-right: 20px; /* gives the items space between */
+	}
+	
+		#navigation ul li a {
+			color: #FFF; /* let's use white for the default link state */
+			text-decoration: none; /* this disables the default underline */
+		}
+		
+		#navigation ul li a:hover {
+			color: #EBB700; /* and use bright gold */
+		}
+	
+#content {
+	width: 940px;
+	/*background-image: url(images/bg-960.png);*/
+	background-position: center;
+	background-repeat: repeat-y;
+	background-color:#FFFFFF;
+	overflow: hidden; /* prevents the great collapse */
+	margin: 0 auto;
+	padding: 20px; /* change padding to 20px all around */
+	border-radius: 10px; /* adds rounded corners */
+	}
+	
+	#content a {
+		color: #39275B; /* purple */
+	}
+	
+	#content a:hover {
+		color: #C79900; /* gold */
+	}
+	
+	#text {
+		width: 620px;
+		float: left;
+	}
+	
+	#sidebar {
+		width: 300px;
+		float: right;
+	}
+	
+	#sidebar ul {
+		padding-left: 0px; /* overwrite general padding */
+	}
+	
+	#sidebar ul li {
+		list-style: none; /* removes default bullet */
+		background-image:url(images/bg-bullet.png);
+		background-position: left; /* positioned to the left */
+		background-repeat: no-repeat; /* do not repeat background */
+		padding-left: 10px; /* creates padding so we can see the background image */
+	}
+	
+#footer {
+	width: 980px; /* change the width */
+	margin: 0 auto;
+	padding: 20px 0; /* change the padding */
+	/*border: 1px solid black;*/
+	color: #FFF; /* give all text elements a color of white */
+	}
+	
+	#footer a {
+		color: #FFFFFF; /* white */
+	}
+	
+	#footer a:hover {
+		color: #C79900; /* gold */
+	}
+
+	
+</style>
+</head>
+<body>
+
+<!-- Begin Header -->
+<div id="header">
+<h1><a href="index.html">Mike Sinkula</a></h1>
+</div>
+<!-- End Header -->
+
+<!-- Begin Navigation -->
+<div id="navigation">
+    <ul id="navigation-items">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<!-- End Navigation -->
+
+<!-- Begin Content -->
+<div id="content">
+
+    <!-- Begin Text -->
+    <article id="text">
+    <h2>Header Level 2</h2>  
+    <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo.</p>
+    <p>Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+    <h3>Header Level 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>   
+    <ol>
+       <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+       <li>Aliquam tincidunt mauris eu risus.</li>
+    </ol>
+    <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+    <h3>Header Level 3</h3>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    <ul>
+       <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+       <li><a href="#">Aliquam tincidunt mauris eu risus.</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+    </article>
+    <!-- End Text -->
+    
+    <!-- Begin Sidebar -->
+    <aside id="sidebar">
+    <h2>Headline</h2>
+    <ul>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li><a href="#">Aliquam tincidunt</a></li>
+    <li><a href="#">Vestibulum auctor</a></li>
+    </ul>
+    </aside>
+    <!-- End Sidebar -->
+    
+</div>
+<!-- End Content -->
+
+<!-- Begin Footer -->
+<div id="footer">
+<p>&copy;2014 <a href="http://www.mikesinkula.com/">Mike Sinkula</a>. All rights reserved.</p>
+</div>
+<!-- End Footer -->
+
+</body>
+</html>
