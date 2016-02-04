@@ -8,12 +8,17 @@
 
 * { margin: 0; padding: 0; }
 
+html {
+	/*background-color: #4b2e83;*/
+	background: linear-gradient( #2b1b4b, #4b2e83);
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #000000;
-	background-image: url(images/bg-960.png);
-	background-repeat: repeat-y;
+	background-image: url(images/bg-boxes.png);
 	background-position: top center;
+	background-repeat: repeat-x;
 	}
 	
 h1 {
@@ -43,7 +48,6 @@ p {
 }
 
 ol, ul {
-
 	padding-left: 40px;
 	/*width: 620px;
 	margin-left: 50px;*/
@@ -60,26 +64,38 @@ ol, ul {
 	margin-right: 20px;	
 }
 
+
+
 #header {
-	border: 1px solid #000000;
-	width: 940px;
-	margin: 40px auto 20px auto;
-	padding: 20px;	
+	/*border: 1px solid magenta;*/
+	width: 980px;
+	margin: 20px auto 10px auto;
+	/*padding: 20px;*/	
 }
 
+	#logo a {
+		color: #fff;
+		text-decoration: none;
+		}
+	
+	#logo a:hover {
+		color: #85754d;
+		}
+
 #navigation {
-	/*width: 940px;
+	width: 980px;
 	margin: 0 auto;
-	padding: 4px 20px;*/	
+	/*padding: 4px 20px;	*/
 	/*border: 1px solid #000;*/
-	background: black;
+	/*background: black;*/
+	margin-bottom: 20px;
 }
 
 	#navigation ul {
-		width: 940px;
-	margin: 0 auto;
-	padding: 0 20px;	
-		/*padding-left: 0;*/
+		width: 980px;
+		margin: 0 auto;
+		/*padding: 0 20px;*/	
+		padding-left: 0;
 	}
 
 	#navigation ul li {
@@ -97,31 +113,55 @@ ol, ul {
 		text-decoration: none;	
 		display: block;
 		padding: 8px 20px;
+		margin-left: -4px;
 	}
 	
+	/*#navigation ul li a:first-child {
+		margin-left: 0;
+	}*/
+	
 	#navigation ul li a:hover {
-		color: #CCC;
+		color: #4b2e83;
 		background-color: #fff;
 	}
 
 #content {
-	border: 1px solid #000000;
+	background-color: #fff;
+	/*background-image: url(images/bg-960.png);*/
+	background-repeat: repeat-y;
+	background-position: top center;
+	/*border: 1px solid magenta;*/
 	width: 940px;
 	margin: 0 auto;
 	padding: 20px;
 	overflow: hidden;
+	border-radius: 10px;
+}
+
+#content a {
+	color: #4b2e83;
+	}
+
+#content a:hover {
+		color: #85754d;
+		text-decoration: none;
+	}
+
+#content ul li {
+	list-style-type: none;
+	list-style-image: url(images/bg-bullet.png);
 }
 
 	#text {
 		width: 620px;
 		float: left;
-		border: 1px solid #000000;	
+		/*border: 1px solid #000000;*/	
 	}
 	
 	#sidebar {
 		float: right;
 		width: 300px;
-		border: 1px solid #000000;	
+		/*border: 1px solid #000000;*/	
 	}
 	
 	#sidebar h2:first-child {
@@ -129,13 +169,21 @@ ol, ul {
 	}
 
 #footer {
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	width: 940px;
 	margin: 0 auto;
 	padding: 20px;
 	clear: both;
-	
+	color: #fff;
 }
+
+#footer a {
+	color: #fff;	
+	}
+	
+#footer a:hover {
+	color: #85754d;
+	}
 
 
 </style>
@@ -147,7 +195,7 @@ ol, ul {
 
 <!-- Begin Header -->
 <div id="header">
-	<h1>Mike's HCDE532 2016 Demo Webpage</h1>
+	<h1 id="logo"><a href="index.html">Mike Sinkula</a></h1>
 </div>
 <!-- End Header -->
 
@@ -167,14 +215,14 @@ ol, ul {
 
 	<!-- Begin Text -->
 	<article id="text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Sed sit amet risus eget</strong> tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. Ut sodales nisl in felis suscipit in sollicitudin metus varius. <em>Pellentesque porttitor</em> nibh quis nisi aliquam quis feugiat odio fermentum. Nulla a enim eu est congue pellentesque sit amet a lacus. 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Sed sit amet risus eget</strong> tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. Ut sodales nisl in felis suscipit in sollicitudin metus varius. <em>Pellentesque porttitor</em> nibh quis nisi <a href="#">aliquam quis feugiat</a> odio fermentum. Nulla a enim eu est congue pellentesque sit amet a lacus. 
         </p>
         <h2>Header Level Two</h2>
         <img class="left" src="images/FPO-photo-140x140.png" alt="Shut Up!">
-        <p class="redtext">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer lectus turpis, venenatis quis sodales vitae, adipiscing ac dolor. Pellentesque rhoncus, ligula vitae blandit volutpat, arcu enim vehicula risus, at facilisis turpis turpis eget odio. Duis faucibus sodales pretium. Etiam suscipit magna metus. Aliquam vitae imperdiet est.</p>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer lectus turpis, venenatis quis sodales vitae, adipiscing ac dolor. Pellentesque rhoncus, ligula vitae blandit volutpat, arcu enim vehicula risus, at facilisis turpis turpis eget odio. Duis faucibus sodales pretium. Etiam suscipit magna metus. Aliquam vitae imperdiet est.</p>
         <ul>
         <li>bullet one</li>
-        <li class="redtext">bullet two</li>
+        <li>bullet two</li>
         </ul>
         <p>In a metus neque. Donec sed est metus, in cursus lectus. Aliquam vel aliquam ante. Curabitur non libero ut ipsum eleifend cursus. Sed rutrum sagittis pulvinar. Suspendisse potenti. Maecenas ut sapien nisi. Ut accumsan varius ornare. Quisque euismod sapien ut erat fermentum sed viverra nibh congue. Sed at metus est.</p>
         <ol>
