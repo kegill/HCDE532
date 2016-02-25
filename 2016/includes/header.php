@@ -6,8 +6,23 @@
 
 <!-- Begin Styles -->
 <link href="styles.css" rel="stylesheet" type="text/css" media="all" >
+<link href="flexslider.css" rel="stylesheet" type="text/css" media="all" >
 <!-- End Styles -->
 
+<!-- Begin Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="scripts/jquery.flexslider.js"></script>
+<!-- End Scripts -->
+
+<!-- Begin FlexSlider -->
+<script type="text/javascript">
+
+$(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+
+</script>
+<!-- End FlexSlider -->
 
 </head>
 

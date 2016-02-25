@@ -158,8 +158,24 @@ ol, ul {
 
 #content ul li {
 	list-style-type: none;
-	list-style-image: url(images/bg-bullet.png);
+	/*list-style-image: url(images/bg-bullet.png);*/
 }
+
+#content ul.slides li {
+	list-style-type: none;
+	list-style-image: none !important;
+}
+
+	#widgets section.widget-item {
+		background-color: #CCC;
+		float: left;
+		width: 300px;
+		margin-right: 20px;
+	}
+	
+	#widgets section.widget-item:last-child {
+		margin-right: 0;	
+	}
 
 	#text {
 		width: 620px;
@@ -171,6 +187,11 @@ ol, ul {
 		float: right;
 		width: 300px;
 		/*border: 1px solid #000000;*/	
+	}
+	
+	#sidebar ul li {
+		list-style-type: none;
+		list-style-image: url(images/bg-bullet.png);
 	}
 	
 	#sidebar h2:first-child {
