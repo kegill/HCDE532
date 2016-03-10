@@ -28,6 +28,22 @@ $(window).load(function() {
 </script>
 <!-- End FlexSlider -->
 
+<!-- Begin Toggle -->
+<script type="text/javascript">
+
+$(window).load(function() {
+	
+	$('#toggle').click(function() {
+		
+		$('#navigation').slideToggle();
+		
+		});
+	
+	});
+
+</script>
+<!-- End Toggle -->
+
 </head>
 
 <body>
@@ -36,6 +52,7 @@ $(window).load(function() {
 <!-- Begin Header -->
 <div id="header">
 	<h1 id="logo"><a href="index.php">Mike Sinkula</a></h1>
+    <p id="toggle">Menu &#8801;</p>
 </div>
 <!-- End Header -->
 

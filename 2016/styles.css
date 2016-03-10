@@ -92,6 +92,16 @@ img.image {
 	#logo a:hover {
 		color: #85754d;
 		}
+		
+	#toggle {
+		color: #FFF;
+		text-transform: uppercase;
+		position: absolute;
+		z-index: 10;
+		top: 10px;
+		right: 10px;
+		display: none;
+		}
 
 #navigation {
 	max-width: 980px;
@@ -100,7 +110,7 @@ img.image {
 }
 
 	#navigation ul {
-		width: 980px;
+		/*width: 980px;*/
 		margin: 0 auto;
 		/*padding: 0 20px;*/	
 		padding-left: 0;
@@ -122,6 +132,7 @@ img.image {
 		display: block;
 		padding: 8px 20px;
 		margin-left: -4px;
+		/*background-color: #DDD;*/
 	}
 	
 	#navigation ul li.current a {
@@ -213,12 +224,82 @@ img.image {
 /* Desktop Below 1024px */
 @media screen and (max-width: 1024px) {
 	
+	#content {
+		padding: 20px 2.04%;	
+	}
+	
 	#text {
 		width: 65.95%; /* 620px / 940px */
+		/*background-color: #DDD;*/
 	}
 	
 	#sidebar {
 		width: 31.91%; /* 300px / 940px */
+		/*background-color: #DDD;*/
+	}
+	
+}
+
+/* Tablet Below 800px */
+@media screen and (max-width: 800px) {
+	
+	#header {
+		padding: 0 20px;
+	}
+	
+	#content {
+		border-radius: 0;	
+	}
+	
+}
+
+/* Phone Below 600px */
+@media screen and (max-width: 600px) {
+	
+	#header {
+		padding: 0 10px;	
+	}
+	
+		#toggle {
+			display: block;
+			cursor: pointer;
+		}
+	
+	#navigation {
+		display: none;	
+	}
+	
+	#navigation ul {
+		padding: 0 20px;	
+	}
+	
+	#navigation ul li {
+		display: block;	
+		border-bottom: 1px solid #FFF;
+		border-right: none;
+		margin: 0;
+	}
+	
+	#navigation ul li:first-child {
+		border-top: 1px solid #FFF;	
+	}
+	
+	#content {
+		padding: 20px 10px;	
+	}
+	
+	#text, #sidebar {
+		float: none;
+		width: 100%;
+	}
+	
+	#sidebar {
+		padding: 20px 0;
+		border-top: 1px solid #DDD;	
+	}
+	
+	#footer {
+		padding: 20px 10px;	
 	}
 	
 }
