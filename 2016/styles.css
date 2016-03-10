@@ -14,29 +14,26 @@ body {
 	background-image: url(images/bg-boxes.png);
 	background-position: top center;
 	background-repeat: repeat-x;
+	font-size: 100%; /* 16px */
+	line-height: 150%; 
 	}
 	
 h1 {
-	font-size: 36px;
-	line-height: 36px;
-	/*width: 620px;*/
-	/*margin-bottom: 20px;*/
-	/*margin-left: 50px;
-	margin-top: 25px;*/
+	font-size: 2.25em; /* 36px / 16px */
+	line-height: 125%;
 }
 
 h2 {
-	font-size: 32px;
-	line-height: 32px;
+	font-size: 2em;
+	line-height: 125%;
 	padding-top: 8px;
 	margin-bottom: 2px;
-	/*width: 620px;
-	margin-left: 50px;*/
+	
 }
 
 h3, label {
-	font-size: 24px;
-	line-height: 24px;
+	font-size: 1.5em;
+	line-height: 125%;
 	padding-top: 8px;
 	margin-bottom: 2px;
 	display: block;
@@ -50,19 +47,25 @@ select {
 }
 
 p {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1em;
 	margin-bottom: 10px;
-	/*width: 620px;*/
-	/*margin-left: 50px;*/
 }
 
 ol, ul {
 	padding-left: 40px;
-	/*width: 620px;
-	margin-left: 50px;*/
 	margin-bottom: 10px;
 	
+}
+
+img {
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+	}
+
+img.image {
+	border: 1px solid #2b1b4b;
+	padding: 10px;
 }
 
 .redtext {
@@ -77,10 +80,8 @@ ol, ul {
 
 
 #header {
-	/*border: 1px solid magenta;*/
-	width: 980px;
+	max-width: 980px;
 	margin: 20px auto 10px auto;
-	/*padding: 20px;*/	
 }
 
 	#logo a {
@@ -93,11 +94,8 @@ ol, ul {
 		}
 
 #navigation {
-	width: 980px;
+	max-width: 980px;
 	margin: 0 auto;
-	/*padding: 4px 20px;	*/
-	/*border: 1px solid #000;*/
-	/*background: black;*/
 	margin-bottom: 20px;
 }
 
@@ -139,8 +137,7 @@ ol, ul {
 	/*background-image: url(images/bg-960.png);*/
 	background-repeat: repeat-y;
 	background-position: top center;
-	/*border: 1px solid magenta;*/
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 	padding: 20px;
 	overflow: hidden;
@@ -179,14 +176,12 @@ ol, ul {
 
 	#text {
 		width: 620px;
-		float: left;
-		/*border: 1px solid #000000;*/	
+		float: left;	
 	}
 	
 	#sidebar {
 		float: right;
-		width: 300px;
-		/*border: 1px solid #000000;*/	
+		width: 300px;	
 	}
 	
 	#sidebar ul li {
@@ -199,8 +194,7 @@ ol, ul {
 	}
 
 #footer {
-	/*border: 1px solid #000;*/
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 	padding: 20px;
 	clear: both;
@@ -215,3 +209,16 @@ ol, ul {
 	color: #85754d;
 	}
 
+
+/* Desktop Below 1024px */
+@media screen and (max-width: 1024px) {
+	
+	#text {
+		width: 65.95%; /* 620px / 940px */
+	}
+	
+	#sidebar {
+		width: 31.91%; /* 300px / 940px */
+	}
+	
+}

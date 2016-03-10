@@ -3,6 +3,7 @@
 	<!-- Begin Text -->
 	<article id="text">
     	<h2>About</h2>
+        <img src="images/img-graduation.jpg" class="image" alt="I DID IT!">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Sed sit amet risus eget</strong> tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. Ut sodales nisl in felis suscipit in sollicitudin metus varius. <em>Pellentesque porttitor</em> nibh quis nisi <a href="#">aliquam quis feugiat</a> odio fermentum. Nulla a enim eu est congue pellentesque sit amet a lacus. 
         </p>
         <h2>Header Level Two</h2>
