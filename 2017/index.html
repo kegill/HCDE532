@@ -2,15 +2,22 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<title>Mike's 2017 HCDE532 Website</title>
+	<title>Mike&apos;s 2017 HCDE532 Website</title>
 	<style type="text/css" media="all">
+		
+		* {margin: 0; padding: 0;}
 		
 		body {
 			font-family: Arial, Helvetica, sans-serif;
+			background-image: url(images/bg-960.png);
+			background-repeat: repeat-y;
+			background-position: center;
 		}
 		
 		h1, h2, h3 {
 			color: #666;
+			padding-top: 10px;
+			margin-bottom: 4px;
 		}
 		
 		h1 {
@@ -29,34 +36,135 @@
 		p {
 			font-size: 16px;
 			line-height: 24px;
+			margin-bottom: 10px;
 	
+		}
+		
+		ul, ol {
+			margin-bottom: 10px;
+		}
+		
+		li {
+			font-size: 16px;
+			line-height: 24px;
 		}
 		
 		p em {
 			color: red;
 		}
 		
+		.redtext {
+			/* color: red; */
+		}
 		
+		p.redtext {
+			/* border-bottom: 1px solid red; */
+		}
+		
+		#header {
+			border: 1px solid black;
+			width: 940px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+		
+		#navigation-container {
+			background-color: black;
+		}
+		
+		#navigation {
+			border: 1px solid black;
+			width: 940px;
+			margin: 0 auto;
+			padding: 0 20px;
+			color: white;
+		}
+		
+		#content {
+			border: 1px solid black;
+			width: 940px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+		
+		#text ol, 
+		#text ul {
+			padding: 0 20px;
+		}
+		
+		#footer-container {
+			background-color: black;
+		}
+		
+		#footer {
+			border: 1px solid black;
+			width: 940px;
+			margin: 0 auto;
+			padding: 0 20px;
+			color: white;
+		}
 		
 	</style>
 </head>
 <body>
-	<h1>Mike's New Webpage</h1>
-	<h2>Header Level Two</h2>
-	<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. Ut sodales nisl in <em>felis suscipit in sollicitudin</em> metus varius. Pellentesque porttitor nibh quis nisi aliquam quis feugiat odio fermentum. Nulla a enim eu est congue pellentesque sit amet a lacus.</p>
-	<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer lectus turpis, venenatis quis sodales vitae, adipiscing ac dolor. Pellentesque rhoncus, ligula vitae blandit volutpat, arcu <a href="http://www.sccc.premiumdw.com/">enim vehicula risus</a>, at facilisis turpis turpis eget odio. Duis faucibus sodales pretium. Etiam suscipit magna metus. Aliquam vitae imperdiet est.</p>
-	<h3>Header Level Three</h3>
-	<p>Donec feugiat iaculis nibh sit amet varius. Sed laoreet justo vitae magna dignissim gravida. Nunc nec odio ligula, eget ultrices quam. Nulla commodo viverra magna a gravida. Ut rhoncus massa at nisi sollicitudin quis tincidunt dolor aliquam. Mauris vitae sagittis nunc. Integer sodales, magna sit amet laoreet laoreet, elit leo sollicitudin augue, nec pretium lacus purus et quam.</p>
-	<ol>
-		<li>Nulla commodo viverra magna a gravida.</li>
-		<li>Sed sit amet risus eget tortor bibendum aliquam eget in mi.</li>
-	</ol>
-	<h3>Header Level Three</h3>
-	<p>Donec feugiat iaculis nibh sit amet varius. Sed laoreet justo vitae magna dignissim gravida. Nunc nec odio ligula, eget ultrices quam. Nulla commodo viverra magna a gravida. Ut rhoncus massa at nisi sollicitudin quis tincidunt dolor aliquam. Mauris vitae sagittis nunc. Integer sodales, magna sit amet laoreet laoreet, elit leo sollicitudin augue, nec pretium lacus purus et quam.</p>
-	<ul>
-		<li>Ut rhoncus massa at nisi sollicitudin quis tincidunt dolor aliquam.</li>
-		<li>Duis faucibus sodales pretium.</li>
-	</ul>
+	<!-- Begin Header -->
+	<div id="header">
+		<h1>Mike's New Webpage</h1>
+	</div>
+	<!-- End Header -->
+	
+	<!-- Begin Navigation -->
+	<div id="navigation-container">
+		<div id="navigation">
+			<nav>Nav Goes here</nav>
+		</div>
+	</div>
+	<!-- End Navigation -->
+	
+	<!-- Begin Content -->
+	<div id="content">
+	
+		<!-- Begin Text -->
+		<div id="text">
+			<h2>Header Level Two</h2>
+			<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. Ut sodales nisl in <em>felis suscipit in sollicitudin</em> metus varius. Pellentesque porttitor nibh quis nisi aliquam quis feugiat odio fermentum. Nulla a enim eu est congue pellentesque sit amet a lacus.</p>
+			<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer lectus turpis, venenatis quis sodales vitae, adipiscing ac dolor. Pellentesque rhoncus, ligula vitae blandit volutpat, arcu <a href="http://www.sccc.premiumdw.com/">enim vehicula risus</a>, at facilisis turpis turpis eget odio. Duis faucibus sodales pretium. Etiam suscipit magna metus. Aliquam vitae imperdiet est.</p>
+			<h3>Header Level Three</h3>
+			<p class="redtext">Donec feugiat iaculis nibh sit amet varius. Sed laoreet justo vitae magna dignissim gravida. Nunc nec odio ligula, eget ultrices quam. Nulla commodo viverra magna a gravida. Ut rhoncus massa at nisi sollicitudin quis tincidunt dolor aliquam. Mauris vitae sagittis nunc. Integer sodales, magna sit amet laoreet laoreet, elit leo sollicitudin augue, nec pretium lacus purus et quam.</p>
+			<ol>
+				<li class="redtext">Nulla commodo viverra magna a gravida.</li>
+				<li>Sed sit amet risus eget tortor bibendum aliquam eget in mi.</li>
+			</ol>
+			<h3>Header Level Three</h3>
+			<p>Donec feugiat iaculis nibh sit amet varius. Sed laoreet justo vitae magna dignissim gravida. Nunc nec odio ligula, eget ultrices quam. Nulla commodo viverra magna a gravida. Ut rhoncus massa at nisi sollicitudin quis tincidunt dolor aliquam. Mauris vitae sagittis nunc. Integer sodales, magna sit amet laoreet laoreet, elit leo sollicitudin augue, nec pretium lacus purus et quam.</p>
+			<ul>
+				<li>Ut rhoncus massa at nisi sollicitudin quis tincidunt dolor aliquam.</li>
+				<li>Duis faucibus sodales pretium.</li>
+			</ul>
+		</div>
+		<!-- End Text -->
+		
+		<!-- Begin Sidebar -->
+		<div id="sidebar">
+			<h2>Page Headline</h2>
+			<ul>
+				<li>Duis faucibus sodales</li>
+				<li>Ut rhoncus massa</li>
+				<li>Integer sodales magna</li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+	
+	</div>
+	<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer-container">
+		<div id="footer">
+			<p>&copy;2017 Mike Sinkula</p>
+		</div>
+	</div>
+	<!-- End Footer -->
 
 </body>
 </html>
