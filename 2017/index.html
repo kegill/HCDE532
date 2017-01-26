@@ -49,6 +49,10 @@
 			line-height: 24px;
 		}
 		
+		a {
+			color: #666;
+		}
+		
 		p em {
 			color: red;
 		}
@@ -68,23 +72,67 @@
 			padding: 0 20px;
 		}
 		
-		#navigation-container {
-			background-color: black;
-		}
-		
 		#navigation {
 			border: 1px solid black;
 			width: 940px;
 			margin: 0 auto;
 			padding: 0 20px;
-			color: white;
 		}
 		
-		#content {
+		#navigation ul {
+			
+			text-align: center;
+		}
+		
+		#navigation ul li {
+			border: 1px solid magenta;
+			list-style: none;
+			display: inline-block;
+			width: 20%;
+			text-align: center;
+		}
+		
+			#navigation ul li a {
+				display: block;
+				text-decoration: none;
+			}
+		
+			#navigation ul li a:hover {
+				color: white;
+				background-color: black;
+
+			}
+		
+		#content {	
 			border: 1px solid black;
 			width: 940px;
 			margin: 0 auto;
 			padding: 0 20px;
+			overflow: hidden;
+		}
+		
+		.size-medium {
+			width: 300px;
+		}
+		
+		.align-right {
+			float: right;
+			margin-left: 20px;
+		}
+		
+		.align-left {
+			float: left;
+			margin-right: 20px;
+		}
+		
+		#text {
+			width: 620px;
+			float: left;
+		}
+		
+		#sidebar {
+			width: 300px;
+			float: right;
 		}
 		
 		#text ol, 
@@ -92,16 +140,12 @@
 			padding: 0 20px;
 		}
 		
-		#footer-container {
-			background-color: black;
-		}
-		
 		#footer {
+			clear: both;
 			border: 1px solid black;
 			width: 940px;
 			margin: 0 auto;
 			padding: 0 20px;
-			color: white;
 		}
 		
 	</style>
@@ -114,19 +158,23 @@
 	<!-- End Header -->
 	
 	<!-- Begin Navigation -->
-	<div id="navigation-container">
-		<div id="navigation">
-			<nav>Nav Goes here</nav>
-		</div>
+	<div id="navigation">
+		<ul id="navigation-items">
+			<li><a href="about.html">About</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="prorfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
 	</div>
 	<!-- End Navigation -->
 	
 	<!-- Begin Content -->
 	<div id="content">
-	
+		<p>What Happened?!</p>
 		<!-- Begin Text -->
 		<div id="text">
 			<h2>Header Level Two</h2>
+			<img src="images/myface.png" class="align-right size-medium" alt="This is Mike Sinkula's face!">
 			<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. Ut sodales nisl in <em>felis suscipit in sollicitudin</em> metus varius. Pellentesque porttitor nibh quis nisi aliquam quis feugiat odio fermentum. Nulla a enim eu est congue pellentesque sit amet a lacus.</p>
 			<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer lectus turpis, venenatis quis sodales vitae, adipiscing ac dolor. Pellentesque rhoncus, ligula vitae blandit volutpat, arcu <a href="http://www.sccc.premiumdw.com/">enim vehicula risus</a>, at facilisis turpis turpis eget odio. Duis faucibus sodales pretium. Etiam suscipit magna metus. Aliquam vitae imperdiet est.</p>
 			<h3>Header Level Three</h3>
@@ -154,15 +202,13 @@
 			</ul>
 		</div>
 		<!-- End Sidebar -->
-	
+
 	</div>
 	<!-- End Content -->
 	
 	<!-- Begin Footer -->
-	<div id="footer-container">
-		<div id="footer">
-			<p>&copy;2017 Mike Sinkula</p>
-		</div>
+	<div id="footer">
+		<p>&copy;2017 Mike Sinkula</p>
 	</div>
 	<!-- End Footer -->
 
