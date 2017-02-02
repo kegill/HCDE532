@@ -5,52 +5,38 @@
 	<title>Mike&apos;s 2017 HCDE532 Website</title>
 	<style type="text/css" media="all">
 		
+		/* PURPLE: http://slayeroffice.com/tools/color_palette/?hex=39275b */
+		/* GOLD: http://slayeroffice.com/tools/color_palette/?hex=C79900 */
+		
+		
 		* {margin: 0; padding: 0;}
+		
+		html {
+			background-color: #39275b;
+			background: linear-gradient(#2B1D44, #39275b)
+		}
 		
 		body {
 			font-family: Arial, Helvetica, sans-serif;
-			background-image: url(images/bg-960.png);
-			background-repeat: repeat-y;
-			background-position: center;
+			background-image: url(images/bg-boxes.png);
+			background-position: top center;
+			background-repeat: repeat-x;
+			
 		}
 		
 		h1, h2, h3 {
-			color: #666;
-			padding-top: 10px;
-			margin-bottom: 4px;
+			/*color: #666; */
+			/* padding-top: 10px; */
+			/* margin-bottom: 4px;*/
 		}
 		
-		h1 {
-			font-size: 36px;
-		}
 		
-		h2 {
-			
-			font-size: 24px;
-		}
 		
-		h3 {
-			font-size: 18px;
-		}
 		
-		p {
-			font-size: 16px;
-			line-height: 24px;
-			margin-bottom: 10px;
-	
-		}
 		
-		ul, ol {
-			margin-bottom: 10px;
-		}
-		
-		li {
-			font-size: 16px;
-			line-height: 24px;
-		}
 		
 		a {
-			color: #666;
+			/*color: #666;*/
 		}
 		
 		p em {
@@ -61,58 +47,118 @@
 			/* color: red; */
 		}
 		
+		.white {
+			background-color: white;
+		}
+		
+		.purple {
+			background-color: #39275b;
+		}
+		
 		p.redtext {
 			/* border-bottom: 1px solid red; */
 		}
 		
 		#header {
-			border: 1px solid black;
-			width: 940px;
+			width: 980px;
 			margin: 0 auto;
-			padding: 0 20px;
+			padding: 20px 0;
 		}
 		
+		#header h1 {
+			font-size: 36px;
+		}
+		
+			#logo {}
+
+			#logo a {
+				color: #FFF;
+				text-decoration: none;
+			}
+
+			#logo a:hover {
+				color: #C79900;
+			}
+		
 		#navigation {
-			border: 1px solid black;
-			width: 940px;
+			width: 980px;
 			margin: 0 auto;
-			padding: 0 20px;
+			padding: 10px 0;
 		}
 		
 		#navigation ul {
-			
-			text-align: center;
+			text-align: left;
 		}
 		
 		#navigation ul li {
-			border: 1px solid magenta;
 			list-style: none;
 			display: inline-block;
-			width: 20%;
-			text-align: center;
+			margin-right: 20px;
+			text-align: left;
 		}
 		
 			#navigation ul li a {
 				display: block;
 				text-decoration: none;
+				color: #FFF;
 			}
 		
 			#navigation ul li a:hover {
-				color: white;
-				background-color: black;
-
+				color: #C79900;
 			}
 		
 		#content {	
-			border: 1px solid black;
+			background-image: url(/*images/bg-960.png*/);
+			background-repeat: repeat-y;
+			background-position: center;
+			background-color: #FFF;
 			width: 940px;
 			margin: 0 auto;
-			padding: 0 20px;
+			padding: 20px;
 			overflow: hidden;
+			border-radius: 10px;
+		}
+		
+		#content p {
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 10px;
+	
+		}
+		
+		#content h2 {
+			color: #39275b;
+			font-size: 24px;
+			line-height: 24px;
+			padding-top: 8px;
+			margin-bottom: 4px;
+		}
+		
+		#content h3 {
+			color: #39275b;
+			font-size: 18px;
+			line-height: 18px;
+			padding-top: 8px;
+			margin-bottom: 4px;
+		}
+		
+		#content ul, 
+		#content ol {
+			margin-bottom: 10px;
+		}
+		
+		#content li {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		
+		#content ul li {
+			list-style-image: url(images/bg-bullet.png);
 		}
 		
 		.size-medium {
 			width: 300px;
+			border-radius: 50%;
 		}
 		
 		.align-right {
@@ -130,19 +176,23 @@
 			float: left;
 		}
 		
+		#text ol, 
+		#text ul {
+			padding: 0 16px;
+		}
+		
 		#sidebar {
 			width: 300px;
 			float: right;
 		}
 		
-		#text ol, 
-		#text ul {
-			padding: 0 20px;
+		#sidebar ol,
+		#sidebar ul {
+			padding: 0 16px;
 		}
 		
 		#footer {
 			clear: both;
-			border: 1px solid black;
 			width: 940px;
 			margin: 0 auto;
 			padding: 0 20px;
@@ -153,7 +203,7 @@
 <body>
 	<!-- Begin Header -->
 	<div id="header">
-		<h1>Mike's New Webpage</h1>
+		<h1 id="logo"><a href="index.html">Mike Sinkula</a></h1>
 	</div>
 	<!-- End Header -->
 	
@@ -170,7 +220,7 @@
 	
 	<!-- Begin Content -->
 	<div id="content">
-		<p>What Happened?!</p>
+
 		<!-- Begin Text -->
 		<div id="text">
 			<h2>Header Level Two</h2>
