@@ -6,19 +6,19 @@
 			
 			<?php // Form Handling Script
 			
-			if ( isset ($_POST['submit']) ) {
+			if ( isset ($_POST['submit']) ) { // if the submit button has been clicked
 				
-				$mailMessage = $_POST['message'];
+				$mailRecipient = 'sinkum@uw.edu'; // use this email address
 				
-				$mailSubject = $_POST['subject'];
+				$mailMessage = $_POST['message']; // use the message from the message field
 				
-				$mailRecipient = 'sinkum@uw.edu';
+				$mailSubject = $_POST['subject']; // use the subject from the select menu
 				
-				$mailSender = 'From:'.$_POST['email'];
+				$mailSender = 'From:'.$_POST['email']; // use the email from the email field
 				
-				mail($mailRecipient, $mailSubject, $mailMessage, $mailSender);
+				mail($mailRecipient, $mailSubject, $mailMessage, $mailSender); // send the mail
 				
-				print '<p>Your email has been sent, <strong>'.$_POST['name'].'</strong>!</p>';
+				print '<p>Your email has been sent, <strong>'.$_POST['name'].'</strong>!</p>'; // let the user know their email has been sent
 				
 			}
 			
