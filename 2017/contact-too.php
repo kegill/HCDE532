@@ -8,7 +8,7 @@
 			
 			if ( isset ($_POST['submit']) ) { // if the submit button has been clicked
 				
-				$mailRecipient = 'sinkum@uw.edu'; // use this email address
+				$mailRecipient = 'sinkum@uw.edu'; // send to this email address
 				
 				$mailMessage = $_POST['message']; // use the message from the message field
 				
