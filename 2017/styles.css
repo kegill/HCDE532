@@ -161,17 +161,20 @@ p.redtext {
 }
 
 
-#content ul, 
-#content ol {
+#text ul, 
+#text ol,
+#sidebar ul, 
+#sidebar ol {
 	margin-bottom: 10px;
 }
 
-#content li {
+#text li,
+#sidebar li {
 	font-size: 16px;
 	line-height: 24px;
 }
 
-#content ul li {
+#text ul li {
 	list-style-image: url(images/bg-bullet.png);
 }
 
@@ -198,6 +201,20 @@ p.redtext {
 #text ol, 
 #text ul {
 	padding: 0 16px;
+}
+
+div.widget-item {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+
+div.widget-item:last-child {
+	/* margin-right: 0px;*/
+}
+
+#widgets {
+	margin-right: -20px;
 }
 
 #sidebar {

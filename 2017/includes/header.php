@@ -6,7 +6,24 @@
 	
 	<!-- Begin Styles -->
 	<link href="styles.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="flexslider.css" rel="stylesheet" type="text/css" media="all">
 	<!-- End Styles -->
+	
+	<!-- Begin Scripts -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="scripts/jquery.flexslider.js"></script>
+	<!-- End Scripts -->
+	
+	<!-- Begin Flexslider -->
+	<script type="text/javascript">
+		
+		$(window).load(function() { // when the window loads
+			$('.flexslider').flexslider(); // access the element .flexslider and make it flexslide
+		});
+		
+	</script>
+	<!-- End Flexslider -->
 	
 </head>
 <body>
