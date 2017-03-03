@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 	<title>Mike&apos;s 2017 HCDE532 Website</title>
 	
+	<!-- Begin Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- End Meta -->
+	
 	<!-- Begin Styles -->
 	<link href="styles.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="flexslider.css" rel="stylesheet" type="text/css" media="all">

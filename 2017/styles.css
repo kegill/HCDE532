@@ -9,6 +9,7 @@
 * {margin: 0; padding: 0;}
 
 html {
+	font-size: 100%; /* sets ALL type to 16px = 1em */
 	background-color: #39275b;
 	background: linear-gradient(#2B1D44, #39275b)
 }
@@ -52,13 +53,13 @@ p.redtext {
 }
 
 #header {
-	width: 980px;
+	max-width: 980px;
 	margin: 0 auto;
 	padding: 20px 0;
 }
 
 #header h1 {
-	font-size: 36px;
+	font-size: 2.25em; /* 36px / 16px = 2.25em */
 }
 
 	#logo {}
@@ -73,7 +74,7 @@ p.redtext {
 	}
 
 #navigation {
-	width: 980px;
+	max-width: 980px;
 	margin: 0 auto;
 	padding: 10px 0;
 }
@@ -108,7 +109,7 @@ p.redtext {
 	background-repeat: repeat-y;
 	background-position: center;
 	background-color: #FFF;
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 	padding: 20px;
 	overflow: hidden;
@@ -116,16 +117,16 @@ p.redtext {
 }
 
 #content p {
-	font-size: 16px;
-	line-height: 24px;
-	margin-bottom: 10px;
+	font-size: 1em; /* 16px / 16px = 1em */
+	line-height: 1.5em;
+	margin-bottom: 1em;
 
 }
 
 #content h2 {
 	color: #39275b;
-	font-size: 24px;
-	line-height: 24px;
+	font-size: 1.5em; 
+	line-height: 100%;
 	padding-top: 8px;
 	margin-bottom: 4px;
 }
@@ -133,8 +134,8 @@ p.redtext {
 #content h3, 
 #content label {
 	color: #39275b;
-	font-size: 18px;
-	line-height: 18px;
+	font-size: 1.125em;
+	line-height: 100%;
 	padding-top: 8px;
 	margin-bottom: 4px;
 }
@@ -150,7 +151,7 @@ p.redtext {
 #content button {
 	border: 1px solid #39275b;
 	border-radius: 2px;
-	font-size: 16px;
+	font-size: 1em;
 	padding: 4px;
 	margin-bottom: 10px;
 }
@@ -165,13 +166,13 @@ p.redtext {
 #text ol,
 #sidebar ul, 
 #sidebar ol {
-	margin-bottom: 10px;
+	margin-bottom: 2em;
 }
 
 #text li,
 #sidebar li {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 #text ul li {
@@ -229,8 +230,48 @@ div.widget-item:last-child {
 
 #footer {
 	clear: both;
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
+
+/* Desktop Screen Set to 1024px or Below */
+@media screen and (max-width: 1024px) {
+	
+	#text { 
+		width: 65.95% ; /* 620px / 940px */
+	}
+	
+	#sidebar {
+		width: 31.91% ; /* 300px / 940px */
+	}
+	
+	div.widget-item {
+		width: calc(33.33% - 20px);
+	}
+	
+}
+
+/* Tablet Screen Set to 800px or Below */
+@media screen and (max-width: 800px) {
+	
+	#header,
+	#navigation, 
+	#footer {
+		padding: 0 2.04%;
+	}
+	
+	#content {
+		border-radius: 0;
+	}
+	
+}
+
+/* Phone Screen Set to 600px or Below */
+@media screen and (max-width: 600px) {
+	
+	/* We will do this next week... */
+	
+}
+
 
