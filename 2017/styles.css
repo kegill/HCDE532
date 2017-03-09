@@ -56,13 +56,16 @@ p.redtext {
 	max-width: 980px;
 	margin: 0 auto;
 	padding: 20px 0;
+	position: relative;
 }
 
 #header h1 {
 	font-size: 2.25em; /* 36px / 16px = 2.25em */
 }
 
-	#logo {}
+	#logo {
+		
+	}
 
 	#logo a {
 		color: #FFF;
@@ -71,6 +74,19 @@ p.redtext {
 
 	#logo a:hover {
 		color: #C79900;
+	}
+
+	#toggle {
+		color: #FFF;
+		font-size: 2em;
+		float: right;
+		position: absolute;
+		top: 5px;
+		right: 20px;
+		z-index: 10;
+		display:  none;
+		cursor: pointer;
+		
 	}
 
 #navigation {
@@ -161,7 +177,6 @@ p.redtext {
 	background-color: #39275b ;
 }
 
-
 #text ul, 
 #text ol,
 #sidebar ul, 
@@ -177,6 +192,13 @@ p.redtext {
 
 #text ul li {
 	list-style-image: url(images/bg-bullet.png);
+}
+
+#text img {
+	box-sizing: border-box;
+	border: 1px solid #39275b;
+	padding: 5px;
+	max-width: 100%;
 }
 
 .size-medium {
@@ -270,7 +292,42 @@ div.widget-item:last-child {
 /* Phone Screen Set to 600px or Below */
 @media screen and (max-width: 600px) {
 	
-	/* We will do this next week... */
+	#toggle {
+		display: block;
+	}
+	
+	#navigation {
+		display: none;
+	}
+	
+	#navigation ul li {
+		display: block;
+		padding: 6px 20px;
+		border-bottom: 1px solid #FFF;
+	}
+	
+	#navigation ul li:last-child {
+		border-bottom: none;
+	}
+	
+	#text {
+		float: none;
+		width: 100%;
+	}
+	
+	#sidebar {
+		float: none;
+		width: 100%;
+		border-top: 1px solid #000;
+		padding: 20px 0;
+	}
+	
+	div.widget-item {
+		float: none;
+		width: 100%;
+		border-top: 1px solid #000;
+		padding-top: 10px;
+	}
 	
 }
 

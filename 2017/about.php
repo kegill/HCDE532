@@ -3,7 +3,7 @@
 		<!-- Begin Text -->
 		<div id="text">
 			<h2>About: Header Level Two</h2>
-			<img src="images/myface.png" class="align-right size-medium" alt="This is Mike Sinkula's face!">
+			<img src="images/img-graduation.jpg" alt="This is Mike Sinkula's face!" >
 			<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. Ut sodales nisl in <em>felis suscipit in sollicitudin</em> metus varius. Pellentesque porttitor nibh quis nisi aliquam quis feugiat odio fermentum. Nulla a enim eu est congue pellentesque sit amet a lacus.</p>
 			<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer lectus turpis, venenatis quis sodales vitae, adipiscing ac dolor. Pellentesque rhoncus, ligula vitae blandit volutpat, arcu <a href="http://www.sccc.premiumdw.com/">enim vehicula risus</a>, at facilisis turpis turpis eget odio. Duis faucibus sodales pretium. Etiam suscipit magna metus. Aliquam vitae imperdiet est.</p>
 			<h3>Header Level Three</h3>
